@@ -2,6 +2,7 @@
 *{
     font-family: 'Nunito Sans', sans-serif;
 }
+
 .navbar{
 height: 114px;
 border: none;
@@ -17,6 +18,17 @@ background: white;
 #navbarNavAltMarkup a:hover{
     color: #CE0033;
 }
+@media screen and (max-width: 600px) {
+    #navbarNavAltMarkup{
+        background: white;
+        width: 100%;
+    }
+    #trait::before{
+        width: 0px;
+        height: 0px;
+    }
+
+  }
 #trait::before{
     position: absolute;
     left: 2;
@@ -36,13 +48,14 @@ background: white;
     width: 20px;
 }
 .btn-contact{
-    border: 1px solid; 
+    border: 1px solid #FFFFFF; 
     border-radius: 10px; 
     background: #Ce0033; 
     color: white; 
     width: 80px; 
-    height: 30px;
+    height: 40px;
     margin-top: 10px;
+    
 }
 nav h2{
     color: white;
@@ -66,12 +79,14 @@ nav h2{
     color: #CE0033; 
     margin-left: 20px; 
     margin-top: 30px;
+    font-size: 40px;
 }
 h3{
     padding-left: 25px;
     text-align: left;
     font-size: 1em; 
     font-weight: bold;
+    font-size: 28px;
 } 
 .row{
     margin: 20px;
@@ -132,9 +147,10 @@ hr{
 }
 .col-lg-3 span{
     margin-top: -4px;
-    font-size: 0.9em;
+    font-size: 18px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 2;
 }
 @media screen and (max-width: 600px) {
     .col-lg-3 span{
@@ -200,18 +216,20 @@ hr{
     
 }
 .formateur .row{
-    margin-top: -460px;
+    margin-top: -500px;
     
 }
 .formateur .card-title{
     color: white;
     font-weight: bold;
     margin-left: 160px;
+    font-size: 24px;
 }
 .formateur p{
     color: white;
     line-height: 2;
     margin-left: 50px;
+    font-size: 20px;
 }
 .formateur button{
     border: 1px solid #CE0033; 
@@ -231,32 +249,66 @@ hr{
     height: 50px;
     margin-left: 30%;
 }
+@media screen and (max-width: 600px) {
+    .formateur .card-body{
+        margin-top: 500px;
+        width: 100%;
+        list-style: 0.3;
+    }
+    .formateur .card-body h5{
+        margin-left: 28px;
+    }
+    .formateur .card-body p{
+        margin-left: 5px;
+        width: 100%;
+    }
+    .formateur img{
+        width: 0;
+        height: 0;
+    }
+    .formateur{
+        background: #Ce0033;
+    }
+
+  }
 /* ----------Entreprise---------- */
 .entreprise h2{
     color: #CE0033; 
     margin-left: 25px; 
     margin-top: 30px;
+    font-size: 40px;
 }
 .entreprise h3{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 28px;
 } 
 .entreprise .card-body h3{
     color: #CE0033;
     font-size: 14px;
-    padding-left: 80px;
+    margin-left: 65px;
+    
 }
 .entreprise .card-body h4{
     text-align: center;
 }
+@media screen and (max-width: 600px) {
+    .entreprise .card-body h3{
+        margin-left: 2px;
+    }
+
+  }
 /* ------ CSS Partie Offre-------- */
 .offre h3{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 28px;
+    margin-left: 20px;
+}
+.offre .barre{
+    margin-left: 45px;
 }
 .offre p{
     padding-top: 20px;
-    margin-left: 30px;
+    margin-left: 38px;
     margin-right: 30px;
 }
 .offre h2{
@@ -313,7 +365,16 @@ hr{
     height: 50px;
     margin-left: 40%;
 }
-
+@media screen and (max-width: 600px) {
+    .offre h2{
+        margin-left: 18px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .offre .envoyeroffre{
+        margin-left: 100px;
+    }
+  }
 /* ---------Partenaire-------- */
 .partenaire h2{
     color: #CE0033; 
@@ -323,7 +384,7 @@ hr{
 }
 .partenaire h3{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 28px;
     margin-left: 15px;
 }
 .partenaire .barre{
@@ -338,11 +399,11 @@ hr{
 }
 .partenaire #carouselExampleDark{
     width: 70%;
-    margin-top: -230px;
+    margin-top: -340px;
     margin-left: 230px;
 }
 .partenaire .d-block{
-    height: 500px;
+    height: 700px;
 }
 /* @media screen and (max-width: 600px) {
     .partenaire #carouselExampleDark{
@@ -354,10 +415,11 @@ hr{
     color: #CE0033;
     font-weight: bold;
     margin-left: -5px;
+    font-size: 28px;
 }
 .partenaire .row p{
     line-height: 2;
-    margin-left: 20px;
+    margin-left: 28px;
 }
 .partenaire .team{
     width: 90%;
@@ -391,15 +453,15 @@ hr{
         margin-left: 10px;   
     }
     .partenaire .row .cohorte{
-        right: 100px;
+        margin-left: 80%;
         color: black;
         width: 100%;
     }
     .partenaire .carousel1{
         width: 100%;
-        height: 50%;
+        height: 100%;
         margin-left: -180px;
-        margin-top: 100px;
+        margin-top: 200px;
         
     }
   }
@@ -416,7 +478,7 @@ hr{
     color: #CE0033;
     font-weight: bold;
     margin-left: 30px;
-    font-size: 20px;
+    font-size: 28px;
 }
 .activite .row{
     margin-top: 20px;
@@ -424,6 +486,7 @@ hr{
 }
 .activite .row p{
     line-height: 2;
+    font-size: 24;
 }
 .activite .row .img-activite{
     width: 100%;
@@ -433,7 +496,7 @@ hr{
 .activite .row a{
     color: #CE0033;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
     text-decoration: none;
     margin-left: 60%;
 }
@@ -446,7 +509,7 @@ hr{
     height: 80%;
 }
 .activite #h3-activite{
-    font-size: 25px;
+    font-size: 28px;
     font-weight: bold;
     margin-left: 40px;
 }
@@ -461,6 +524,7 @@ hr{
 .activite .row .p1{
     margin-left: -40px;
 }
+/* --------Comment participer-------- */
 .comment-participer .h3-cp{
     color: #CE0033;
     font-weight: bold;
@@ -479,10 +543,10 @@ hr{
     margin-top: -350px;
     cursor: pointer;
 }
-.comment-participer .btn-btn{
+/* .comment-participer .btn-btn{
     margin-top: -200px;
     margin-left: 250px;
-}
+} */
 @media screen and (max-width: 600px) {
     .comment-participer .btn-btn{
         margin-left: 10px;
@@ -518,6 +582,8 @@ hr{
     color: #CE0033;
     font-size: 20px;
 }
-@media screen and (max-width: 600px) {
- 
-  }
+/* --------- FOOTER ---------- */
+footer .img-footer{
+    width: 100%;
+    height: 40%;
+}
