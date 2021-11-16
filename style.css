@@ -18,7 +18,7 @@ background: white;
 #navbarNavAltMarkup a:hover{
     color: #CE0033;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     #navbarNavAltMarkup{
         background: white;
         width: 100%;
@@ -152,7 +152,7 @@ hr{
     margin-right: auto;
     line-height: 2;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .col-lg-3 span{
        width: 100%;
     }
@@ -249,7 +249,7 @@ hr{
     height: 50px;
     margin-left: 30%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .formateur .card-body{
         margin-top: 500px;
         width: 100%;
@@ -260,27 +260,34 @@ hr{
     }
     .formateur .card-body p{
         margin-left: 5px;
-        width: 100%;
+        margin-right: 2px;
+        width: 100%; 
     }
     .formateur img{
         width: 0;
         height: 0;
     }
     .formateur{
-        background: #Ce0033;
+        background-color: #Ce0033;
     }
 
   }
 /* ----------Entreprise---------- */
 .entreprise h2{
     color: #CE0033; 
-    margin-left: 25px; 
-    margin-top: 30px;
+    margin-left: 35px; 
+    margin-top: 90px;
     font-size: 40px;
+    font-weight: bold;
 }
-.entreprise h3{
+.entreprise .barre{
+    margin-top: -40px;
+    margin-left: 30px;
+}
+.entreprise .col-md-6 h3{
     font-weight: bold;
     font-size: 28px;
+    margin-left: -30px;
 } 
 .entreprise .card-body h3{
     color: #CE0033;
@@ -291,11 +298,39 @@ hr{
 .entreprise .card-body h4{
     text-align: center;
 }
-@media screen and (max-width: 600px) {
+.entreprise .row .form-control{
+    width: 50%;
+    height: 60px;
+    margin-left: 45%;
+}
+@media screen and (max-width: 900px) {
     .entreprise .card-body h3{
         margin-left: 2px;
     }
-
+    .entreprise .row{
+        margin-top: 100px;
+    }
+    .entreprise h2{
+        color: #CE0033; 
+        margin-left: 35px; 
+        margin-top: 20px;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .entreprise .barre{
+        margin-top: -110px;
+        margin-left: 30px;
+    }
+    .entreprise .col-md-6 h3{
+        font-weight: bold;
+        font-size: 28px;
+        margin-left: -30px;
+        margin-top: -75px;
+    } 
+    .entreprise .row .form-control{
+        width: 100%;
+        margin-left: 0px;
+    }
   }
 /* ------ CSS Partie Offre-------- */
 .offre h3{
@@ -316,11 +351,14 @@ hr{
     font-weight: bold;
     margin-left: 55%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .offre h2{
         margin-left: 18px;
         font-size: 20px;
         text-align: center;
+    }
+    .offre p{
+        margin-left: 30px;
     }
   }
 .offre img{
@@ -365,7 +403,7 @@ hr{
     height: 50px;
     margin-left: 40%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .offre h2{
         margin-left: 18px;
         font-size: 20px;
@@ -400,7 +438,11 @@ hr{
 .partenaire #carouselExampleDark{
     width: 70%;
     margin-top: -340px;
-    margin-left: 230px;
+    margin-left: 290px;
+    
+}
+.partenaire #carouselExampleDark button{
+    background: #CE0033; border-radius:10px; width: 20px; height :2px;
 }
 .partenaire .d-block{
     height: 700px;
@@ -453,7 +495,12 @@ hr{
 }
 @media screen and (max-width: 600px) {
     .partenaire #carouselExampleControls{
-        margin-left: 10px;   
+        margin-left: -100px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .partenaire #carouselExampleControls{
+        margin-left: 12px;   
     }
     .partenaire .row .cohorte{
         margin-left: 0px;
@@ -466,8 +513,10 @@ hr{
         width: 100%;
         height: 100%;
         margin-left: -180px;
-        margin-top: 200px;
-        
+        margin-top: 200px;        
+    }
+    .partenaire .row p{
+        margin-left: 2px;
     }
 }
 /* Partie Activite */
@@ -529,12 +578,14 @@ hr{
 .activite .row .p1{
     margin-left: -40px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .activite .row p{
-        margin-right: 5px;
+        margin-right: 2px;
     }
     .activite .row .img-activite{
         margin-top: 10px;
+        height: 80%;
+        width: 100%;
     }
     .activite .why{
         margin-top: 10px;
@@ -543,6 +594,10 @@ hr{
     .activite .row a{
         font-size: 18px;
         margin-left: 28px;
+    }
+    .activite .row {
+        font-size: 18px;
+        margin-left: 18px;
     }
     .activite #h3-activite{
         font-size: 20px;
@@ -602,7 +657,7 @@ hr{
     color: #CE0033;
     font-size: 20px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .comment-participer .btn-btn{
         margin-left: 10px;
         margin-top: 40px;
@@ -613,15 +668,79 @@ hr{
     }
     .comment-participer .text-cercle{
         margin-top: -95px;
-        margin-left: 5px;
+        margin-left: 2px;
     }
     .comment-participer .h3-cp{
         margin-left: 5px;
     }
   
   }
-/* --------- FOOTER ---------- */
-footer .img-footer{
-    width: 100%;
-    height: 40%;
+.projet{
+    margin-top: 150px;
 }
+.projet h2{
+    color: #000000; 
+    margin-left: 40px; 
+    margin-top: 30px;
+    font-weight: bold;
+}
+.projet .barre{
+    margin-left: 40px;
+    width: 100px;
+}
+.projet .row h3 {
+    color: #CE0033;
+}
+.projet .row {
+    background-image: url("Images/bg-projet.png");
+    margin-top: 20px;
+}
+.projet .row p{
+    font-size: 20px;
+    line-height: 2;
+}
+.projet .row .person-projet{
+    width: 100%;
+}
+.projet .row span{
+    color: #CE0033;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 40%;
+}
+@media screen and (max-width: 900px) {
+    .projet .row h3 {
+        margin-left: -32px;
+        font-size: 24px;
+    }
+    .projet .row p{
+        margin-left: -12px;
+        line-height: 2;
+    }
+    .projet .row span{
+        
+        margin-left: 10%;
+    }
+  
+  }
+/* --------- FOOTER ---------- */
+footer .container-fluid{
+    background-image: url("Images/footer.png");
+}
+
+footer .row .list-unstyled a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 2;
+}
+.footer .row h5{
+    color: #FFFFFF;
+
+}
+@media screen and (max-width: 900px) {
+    footer .container-fluid{
+        width: 100%;
+    }
+  
+  }

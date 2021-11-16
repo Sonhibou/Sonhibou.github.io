@@ -34,7 +34,7 @@
                   <a class="nav-link ms-5" href="#"><img src="Images/search.png" class="loupe" alt=""></a>
                   <div class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle ms-5" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Fr</a>
-                      <ul class="dropdown-menu">
+                      <ul class="dropdown-menu" >
                         <li><a class="dropdown-item" href="#">En</a></li>
                       </ul>
                   </div>
@@ -135,7 +135,7 @@
             <div class="col-md-6">
                 <div class="card-body">
                   <h5 class="card-title">A propos du réseau</h5>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Magnam assumenda officia iusto quae unde ipsam odio omnis <br> hic dolorem facilis aliquid sed eligendi ab fugit, maxime porro <br> molestias perspiciatis qui. Lorem ipsum dolor sit amet consectetur, <br> adipisicing elit..aliquid sed eligendi ab fugit, maxime porro <br> molestias perspiciatis qui.</p>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam assumenda officia iusto quae unde ipsam odio omnis hic dolorem facilis aliquid sed eligendi ab fugit, maxime porro  molestias perspiciatis qui. Lorem ipsum dolor sit amet consectetur,  adipisicing elit..aliquid sed eligendi ab fugit, maxime porro molestias perspiciatis qui.</p>
                   <br>
                   <button><b>Nous rejoindre</b></button>
               </div>
@@ -150,7 +150,15 @@
       <div class="container-fluid">
         <div class="entreprise">
           <h2>Entreprise</h2>
-          <h3>Rejoindre le réseau des formateurs</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Recruter un talent</h3>
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" id="validationDefault03" placeholder="Rechecher par profil" required>
+            </div>
+          </div>
+         
           <div class="barre"></div>
           <div class="container-fluid">
             <div class="row">
@@ -295,9 +303,9 @@
         <div class="carousel1">
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background: #CE0033; border-radius:10px; width: 20px; height :2px"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2" style="background: #CE0033; border-radius:10px; width: 20px; height :2px"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3" style="background: #CE0033; border-radius:10px; width: 20px; height :2px"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
@@ -453,7 +461,7 @@
                     <span class="title-btn">Nos différentes activités</span><br>
                     <span class="body-btn">Lorem ipsum</span>
                   </button> -->
-                  <div class="div-cursor"></div>
+                  
                 </button>
               </div>
           
@@ -461,7 +469,34 @@
       </div>
       </div>
     </section>
-    <br><br><br><br>
+    <br>
+    <!--Parie Projet-->
+    <section>
+      <div class="projet">
+        <h2>Proposer un projet</h2>
+        <div class="barre"></div><br>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Un accompagnement pour vos projets</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor necessitatibus repellendus qui ex voluptate corrupti. Deserunt animi sed sit eaque reprehenderit excepturi adipisci illum error, voluptate accusantium pariatur esse molestias?
+              </p>
+            </div>
+            <div class="col-md-6">
+              <img src="Images/img-projet-person.png" alt="" class="person-projet">
+              <span>Votre projet de A à Z</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <section>
+      <div class="temoignage">
+        <h3>Ils en parlent</h3>
+      </div>
+    </section>
   </main>
    <!--Own Bootstrap Jquery-->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -487,9 +522,109 @@
     }
 })
   </script>
-  <footer>
-    <img src="Images/footer.png"  class="img-footer" alt="">
- 
-  </footer>
+ <!--  <footer>
+    
+    <div class="container-fluid ">
+
+      
+      <div class="row">
+        <div class="col-md-3 mx-auto">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><img src="Images/logo2.png" alt="">Senegal</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Very long link 1</a>
+            </li>
+            <li>
+              <a href="#!">Very long link 2</a>
+            </li>
+            <li>
+              <a href="#!">Very long link 3</a>
+            </li>
+            <li>
+              <a href="#!">Very long link 4</a>
+            </li>
+          </ul>
+  
+        </div>
+  
+        <hr class="clearfix w-100 d-md-none">
+        <div class="col-md-3 mx-auto">
+  
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Learn more</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">About Us</a>
+            </li>
+            <li>
+              <a href="#!">Our Story</a>
+            </li>
+            <li>
+              <a href="#!">Term of Use</a>
+            </li>
+            <li>
+              <a href="#!">Privacy Policy </a>
+            </li>
+            <li>
+              <a href="#!">FAQ </a>
+            </li>
+          </ul>
+  
+        </div>
+        
+        <hr class="clearfix w-100 d-md-none">
+        <div class="col-md-3 mx-auto">
+  
+          
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Coordonnées</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Cité keur Goor Gui Dakar, Sicap, Liberté 2 Sénégal</a>
+            </li>
+            <li>
+              <a href="#!">simplon@email.com <br> help@simplon.com </a>
+            </li>
+            <li>
+              <a href="#!">(+221) 77 456 78 90 <br> (+221) 77 654 32 10 </a>
+            </li>
+          </ul>
+  
+        </div>
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        
+        <div class="col-md-3 mx-auto">
+  
+          
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Notre Newsletters</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
+  
+        </div>
+        
+  
+      </div>
+  
+    </div>
+
+  
+    
+  </footer> -->
 </body>
 </html>
