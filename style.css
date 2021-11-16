@@ -436,6 +436,9 @@ hr{
     margin-left: 5px;
     margin-top: -20px;
 }
+.partenaire .row .cohorte{
+    margin-left: 150px;
+}
 .partenaire .carousel-item .btn-parrainer{
     background: #CE0033;
     color: white;
@@ -453,9 +456,11 @@ hr{
         margin-left: 10px;   
     }
     .partenaire .row .cohorte{
-        margin-left: 80%;
-        color: black;
+        margin-left: 0px;
+        color: #Ce0033;
         width: 100%;
+        font-size: 24px;
+        margin-top: 80px;
     }
     .partenaire .carousel1{
         width: 100%;
@@ -464,7 +469,7 @@ hr{
         margin-top: 200px;
         
     }
-  }
+}
 /* Partie Activite */
 .activite h2{
     color: #000000;
@@ -524,6 +529,26 @@ hr{
 .activite .row .p1{
     margin-left: -40px;
 }
+@media screen and (max-width: 600px) {
+    .activite .row p{
+        margin-right: 5px;
+    }
+    .activite .row .img-activite{
+        margin-top: 10px;
+    }
+    .activite .why{
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    .activite .row a{
+        font-size: 18px;
+        margin-left: 28px;
+    }
+    .activite #h3-activite{
+        font-size: 20px;
+    }
+}
+
 /* --------Comment participer-------- */
 .comment-participer .h3-cp{
     color: #CE0033;
@@ -547,12 +572,7 @@ hr{
     margin-top: -200px;
     margin-left: 250px;
 } */
-@media screen and (max-width: 600px) {
-    .comment-participer .btn-btn{
-        margin-left: 10px;
-        margin-top: 40px;
-    }
-  }
+
 .comment-participer .cercle-btn{
     background-color:#CE0033;
     border: none;
@@ -582,6 +602,24 @@ hr{
     color: #CE0033;
     font-size: 20px;
 }
+@media screen and (max-width: 600px) {
+    .comment-participer .btn-btn{
+        margin-left: 10px;
+        margin-top: 40px;
+    }
+    .comment-participer .img-cercle{
+        width: 0px;
+        height: 0px;
+    }
+    .comment-participer .text-cercle{
+        margin-top: -95px;
+        margin-left: 5px;
+    }
+    .comment-participer .h3-cp{
+        margin-left: 5px;
+    }
+  
+  }
 /* --------- FOOTER ---------- */
 footer .img-footer{
     width: 100%;
