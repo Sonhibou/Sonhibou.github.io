@@ -11,8 +11,11 @@
     <!--Owl Bootstrap Theme-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <!--Fin-->
+    <!--Script font Awesome-->
+    <script src="https://kit.fontawesome.com/701e555d7c.js" crossorigin="anonymous"></script>
+    <!---->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="espace.css">
     <title>Espace</title>
 </head>
 <body>
@@ -52,15 +55,17 @@
       </nav>
       <!-- Partie -->
       <section class="apprenant">
-        <h2>Apprenant</h2>
+        <h2 class="text-center"><b>Apprenant</b></h2>
         <h3>Je veux m'inscrire à une formation</h3>
         <div class="barre"></div><br>
         <div class="row">
           <div class="col-lg-3">
             <div class="column1">
-                <button class="cercle">01</button>
+                <button class="cercle">01<div id="barre-entre-chiffre"></div></button>
+                <div id="barre-entre-chiffre"></div>
                 <h3>Trouver une formation</h3>
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. lore Architecto nihil provident iste amet iusto cum explicabo id modi dolorum. Quis ut temporibus quam assumenda sit autem et eveniet architecto quasi.</span>
+            
             </div>
           </div>
             <div class="col-lg-3">
@@ -93,40 +98,42 @@
       <div class="candidature">
         <h3>Appel à candidature en cours</h3>
           <div class="barre"></div>
+          <div class="container-fluid p-md-5">
               <div class="card mb-3">
                   <div class="row g-0">
                       <div class="col-md-6">
-                          <img src="Images/design.png" class="img-fluid rounded-start " alt="..."  >
+                          <img src="Images/design.png" class="img-fluid rounded-start w-md-100" alt="..."  >
                       </div>
-                      <div class="col-md-6">
-                          <div class="card-body">
-                            <h5 class="card-title">Designer</h5>
-                            <p class="card-text" >This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <div class="col-md-6 w-sm-100 w-md-100">
+                          <div class="card-body ">
+                            <h5 class="card-title text-center ">Designer</h5>
+                            <p class="card-text" >This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, totam debitis aut eligendi voluptatem aliquam quibusdam. Molestias quaerat fugiat commodi neque exercitationem dignissimos! Nam cupiditate voluptas deserunt cumque ducimus omnis. . Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, totam debitis aut eligendi voluptatem aliquam quibusdam. Molestias quaerat fugiat commodi neque exercitationem dignissimos! Nam cupiditate voluptas deserunt cumque ducimus omnis.</p>
                             <p class="card-text"><span>Debut :&nbsp;</span><small class="text-muted">Décembre 08 &emsp;</small><span>Fin :&nbsp;</span><small class="text-muted">Juin 08</small></p>
-                            <button>S'inscrire</button>
+                            <button class="text-center">S'inscrire</button>
                           </div>
                       </div>
                    </div>
                 
                   <div class="row g-0">
                       <div class="col-md-6">
-                          <img src="Images/dev.png" class="img-fluid rounded-start " alt="..."  >
+                          <img src="Images/dev.png" class="img-fluid rounded-start w-100" alt="..."  >
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-6 w-sm-100">
                           <div class="card-body">
-                              <h5 class="card-title">Promo 4 Dev Web er Mobile</h5>
-                              <p class="card-text" >This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <h5 class="card-title text-center">Promo 4 Dev Web er Mobile</h5>
+                              <p class="card-text" >This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, totam debitis aut eligendi voluptatem aliquam quibusdam. Molestias quaerat fugiat commodi neque exercitationem dignissimos! Nam cupiditate voluptas deserunt cumque ducimus omnis. . Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, totam debitis aut eligendi voluptatem aliquam quibusdam. Molestias quaerat fugiat commodi neque exercitationem dignissimos! Nam cupiditate voluptas deserunt cumque ducimus omnis.</p>
                               <p class="card-text"><span>Debut :&nbsp;</span><small class="text-muted">Décembre 08 &emsp;</small><span>Fin :&nbsp;</span><small class="text-muted">Juin 08</small> </p>
                               <button>S'inscrire</button>
                             </div>
                       </div>
                   </div>
-              </div>
+             </div>
+            </div>
       </div>         
     </section>
     <section>
       <div class="formateur">
-        <h2>Formateur</h2>
+        <h2 class="text-center"><b>Formateur</b></h2><br>
         <h3>Rejoindre le réseau des formateurs</h3>
           <div class="barre"></div>
           <br>
@@ -149,7 +156,7 @@
     <section>
       <div class="container-fluid">
         <div class="entreprise">
-          <h2>Entreprise</h2>
+          <h2 class="text-center">Entreprise</h2>
           <div class="row">
             <div class="col-md-6">
               <h3>Recruter un talent</h3>
@@ -169,6 +176,11 @@
                     <div class="card-body">
                       <h4>Maimouna Diallo</h4>
                       <h3>Developpeur Full Stack</h3>
+                      <div class="reseaux-sociaux">
+                        <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook" target="_blank" style="color: #CE0033"></i></a>
+                        <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZnIifQ%3D%3D%22%7D"><i class="fab fa-twitter" style="color: #CE0033;" target="blank"></i></a>
+                        <a href="https://www.linkedin.com/login/fr"><i class="fab fa-linkedin" style="color: #CE0033;"></i></a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -177,8 +189,14 @@
                   <div class="card border-0 shadow">
                     <img src="Images/img1.jpg" alt="" class="card-img-top">
                     <div class="card-body">
-                      <h4>Maimouna Diallo</h4>
+                      <h4>Diaretou TOURE</h4>
                       <h3>Developpeur Full Stack</h3>
+                      <div class="reseaux-sociaux">
+                        <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook" target="_blank" style="color: #CE0033;"></i></a>
+                        <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZnIifQ%3D%3D%22%7D"><i class="fab fa-twitter" style="color: #CE0033;"></i></a>
+                        <a href="https://www.linkedin.com/login/fr"><i class="fab fa-linkedin" style="color: #CE0033;"></i></a>
+                      </div>
+                     
                     </div>
                   </div>
                 </div>
@@ -197,7 +215,6 @@
         <h3>Déposer une offre</h3>
         <div class="barre"></div>
         <p>
-          
           Sur la gauche de l’écran, repérez immédiatement où vous en êtes de votre saisie et complétez les champs dans l’ordre qui vous convient. 
           Si vous interrompez votre saisie, celle-ci est automatiquement sauvegardée.Sur la gauche de l’écran, repérez immédiatement où vous en êtes de votre saisie et complétez les champs dans l’ordre qui vous convient. 
           Si vous interrompez votre saisie, celle-ci est automatiquement sauvegardée.
@@ -222,7 +239,7 @@
                         <div class="col-md">
                           <div class="form-group">
                             <label for="formGroupExampleInput" class="form-label"></label>
-                            <input type="text" class="form-control" placeholder="Nom *">
+                            <input type="text" class="form-control" placeholder="Nom *" style="box-shadow: 60px black;">
                           </div>
                         </div>
                       </div>
@@ -270,8 +287,7 @@
                       </div>
     
                         <!--  -->
-                        <div class="row g-2">
-                        
+                        <div class="row g-2">                  
                             <div class="form-group">
                               <textarea class="form-control" id="texterea" placeholder="Message *"></textarea>
                             </div>
@@ -296,6 +312,7 @@
       <div class="partenaire">
         <h2>Devenir Partenaire</h2>
         <h3>Parrainer une cohorte</h3>
+        <!-- <span>Nos parrains</span> -->
         <div class="barre"></div><br><br>
         <!-- <h3 class="parh3">Nos parrains</h3> -->
         <img src="Images/partenaire1.png" alt="" id="partenaire1">
@@ -343,17 +360,19 @@
         <br>
         <!--Fin Carousel-->
         <div class="row">
+          <div class="col-gauche">
           <div class="col-md-6">
             <h3>C'est quoi une cohorte</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, minus impedit? Perferendis numquam iusto nesciunt, nisi vel at, dolores minima sed, autem in expedita cum cupiditate et corporis. Autem, reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, porro. Odio dolorum temporibus tempora itaque magnam sit ex perspiciatis, quod omnis vel aliquam possimus voluptatem! Debitis earum vel excepturi ex!</p>
             <img src="Images/team.png" alt="" class="team">
           </div>
+        </div>
           <div class="col-md-6">
             <h3 class="cohorte">Nos cohortes en cours</h3>
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="card" style="width: 18rem;">
+            <div id="carouselExampleControls" class="carousel slide w-sm-50" data-bs-ride="carousel" style="width: 40rem;">
+              <div class="carousel-inner w-100">
+                <div class="carousel-item active w-sm-100">
+                  <div class="card w-sm-100" style="width: 40rem;">
                     <img src="Images/slide1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <div class="card-title">
@@ -365,8 +384,8 @@
                     
                   </div>
                 </div>
-                <div class="carousel-item">
-                  <div class="card" style="width: 18rem;">
+                <div class="carousel-item w-sm-100">
+                  <div class="card w-sm-100" style="width: 40rem;">
                     <img src="Images/slide2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <div class="card-title">
@@ -377,8 +396,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
-                  <div class="card" style="width: 18rem;">
+                <div class="carousel-item w-sm-100">
+                  <div class="card w-sm-100" style="width: 40rem;">
                     <img src="Images/slide3.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <div class="card-title">

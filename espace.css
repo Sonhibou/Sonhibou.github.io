@@ -164,7 +164,7 @@ hr{
 #barre-entre-chiffre{
     background: #CE0033;
     width: 100%;
-    height: 30px;
+    
 
 }
 @media screen and (max-width: 900px) {
@@ -192,16 +192,21 @@ hr{
 /* Appel à une candidature */
 .candidature .card{
     border: none;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 900px;
+   /*  margin-left: 30px;
+   
+    max-width: 900px; */
+}
+.candidature .card-text{
+    line-height: 2;
+    font-size: 20px;
 }
 .candidature h3{
     margin-left: 30px;
 }
 .candidature h5{
-    text-align: center;
+    /* text-align: center; */
     color: #CE0033;
+    font-size: 30px;
 }
 .candidature span{
     color: #CE0033;
@@ -211,13 +216,44 @@ hr{
     border-radius: 10px; 
     background: #Ce0033; 
     color: white; 
-    width: 80px; 
-    height: 30px;
+    width: 130px; 
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    
 }
 .candidature .barre{
     margin-left: 55px;
 }
 
+@media screen and (max-width: 1900px) {
+    .candidature .card{
+        margin-top: 0px;
+        width: 100%;
+        margin-left: 5px;
+    }
+    .candidature .card-body{
+        width: 100%;
+        margin-left: 13px;
+        margin-right: 5px;
+    }
+    .candidature .card-text{
+        margin-left: -40px;
+        flex-wrap: nowrap;
+    }
+    .candidature .card-title{
+        font-weight: bold;
+        font-size: 20px;
+        margin-left: -50px;
+    }
+    .candidature h3{
+      
+    }
+    .candidature button{
+        margin-left: -39px;
+        
+    }
+  }
 /*---------- Formateur------------- */
 .formateur{
     
@@ -226,6 +262,7 @@ hr{
     color: #CE0033; 
     margin-left: 40px; 
     margin-top: 30px;
+    font-size: 40px;
 }
 .formateur h3{
     margin-left: 15px;
@@ -272,10 +309,20 @@ hr{
     margin-left: 30%;
 }
 @media screen and (max-width: 900px) {
+    .formateur h2{
+        font-weight: bold;
+        margin-left: 2px;
+        margin-right: 2px;
+        font-size: 40px;
+    }
+    .formateur .card-title{
+        text-align: center;
+    }
     .formateur .card-body{
         margin-top: 500px;
         width: 100%;
         list-style: 0.3;
+        background-color: #CE0033;
     }
     .formateur .card-body h5{
         margin-left: 28px;
@@ -289,9 +336,7 @@ hr{
         width: 0;
         height: 0;
     }
-    .formateur{
-        background-color: #Ce0033;
-    }
+   
 
   }
 /* ----------Entreprise---------- */
@@ -313,8 +358,8 @@ hr{
 } 
 .entreprise .card-body h3{
     color: #CE0033;
-    font-size: 14px;
-    margin-left: 65px;
+    font-size: 18px;
+    text-align: center;
     
 }
 .entreprise .card-body h4{
@@ -324,6 +369,17 @@ hr{
     width: 50%;
     height: 60px;
     margin-left: 45%;
+}
+.entreprise .owl-carousel .card{
+    height: 600px;
+}
+.entreprise .reseaux-sociaux{
+    margin-left: 160px;
+}
+.entreprise .reseaux-sociaux i{
+    width: 40px;
+    padding-top: 30px;
+    
 }
 @media screen and (max-width: 900px) {
     .entreprise .card-body h3{
@@ -353,25 +409,36 @@ hr{
         width: 100%;
         margin-left: 0px;
     }
+    .entreprise .reseaux-sociaux{
+        margin-left: 100px;
+    }
+    .entreprise .owl-carousel .card{
+        height: 450px;
+    }
   }
 /* ------ CSS Partie Offre-------- */
 .offre h3{
     font-weight: bold;
     font-size: 28px;
-    margin-left: 20px;
+    margin-left: 14px;
 }
 .offre .barre{
-    margin-left: 45px;
+    margin-left: 40px;
 }
 .offre p{
     padding-top: 20px;
     margin-left: 38px;
     margin-right: 30px;
+    line-height: 2;
+    font-size: 20px;
 }
 .offre h2{
     color: #CE0033;
     font-weight: bold;
     margin-left: 55%;
+}
+.offre .form-group input{
+    box-shadow: 10px black;
 }
 @media screen and (max-width: 900px) {
     .offre h2{
@@ -425,6 +492,9 @@ hr{
     height: 50px;
     margin-left: 40%;
 }
+input, textarea{
+    box-shadow: 2px 2px 2px 4px #ecf0f1;
+}
 @media screen and (max-width: 900px) {
     .offre h2{
         margin-left: 18px;
@@ -436,6 +506,7 @@ hr{
     }
   }
 /* ---------Partenaire-------- */
+
 .partenaire h2{
     color: #CE0033; 
     margin-left: 40px; 
@@ -445,7 +516,7 @@ hr{
 .partenaire h3{
     font-weight: bold;
     font-size: 28px;
-    margin-left: 15px;
+    margin-left: 30px;
 }
 .partenaire .barre{
     margin-left: 39px;
@@ -464,26 +535,33 @@ hr{
     
 }
 .partenaire #carouselExampleDark button{
-    background: #CE0033; border-radius:10px; width: 20px; height :2px;
+    background: #CE0033; border-radius:10px;
+    width: 20px; 
+    height :2px;
+}
+.partenaire #carouselExampleDark span{
+    margin-top: 90px;
+    color: #CE0033;
+    width: 90px;
 }
 .partenaire .d-block{
     height: 700px;
 }
-/* @media screen and (max-width: 600px) {
-    .partenaire #carouselExampleDark{
-        height: 20px;
-        margin-left: 50px;
-    }
-}*/
+
 .partenaire .row h3{
     color: #CE0033;
     font-weight: bold;
     margin-left: -5px;
     font-size: 28px;
 }
+.partenaire span{
+    margin-left: 30px;
+    margin-top: 90px;
+}
 .partenaire .row p{
     line-height: 2;
     margin-left: 28px;
+    font-size: 20px;
 }
 .partenaire .team{
     width: 90%;
@@ -493,6 +571,7 @@ hr{
     margin-left: 200px;
     width: 100%;
 }
+
 .partenaire .carousel-item h2{
     color: black;
     text-align: center;
@@ -506,14 +585,19 @@ hr{
 .partenaire .carousel-item .btn-parrainer{
     background: #CE0033;
     color: white;
-    height: 30px;
+    height: 45px;
     border: 1px solid #CE0033; 
     border-radius: 10px; 
-    width: 100px;
-    margin-left: 30%;
+    width: 120px;
+    margin-left: 35%;
+    font-size: 20px;
+    position: static;
 }
 .partenaire #carouselExampleControls{
     width: 320px;
+}
+.carousel-inner .card-body h2{
+    color: #CE0033;
 }
 @media screen and (max-width: 600px) {
     .partenaire #carouselExampleControls{
@@ -522,7 +606,8 @@ hr{
 }
 @media screen and (max-width: 900px) {
     .partenaire #carouselExampleControls{
-        margin-left: 12px;   
+        margin-left: 0px;   
+        width: 100%;
     }
     .partenaire .row .cohorte{
         margin-left: 0px;
@@ -531,6 +616,7 @@ hr{
         font-size: 24px;
         margin-top: 80px;
     }
+   
     .partenaire .carousel1{
         width: 100%;
         height: 100%;
@@ -539,6 +625,9 @@ hr{
     }
     .partenaire .row p{
         margin-left: 2px;
+    }
+    .partenaire .col-gauche{
+      /*   margin-left: 30px; */
     }
 }
 /* Partie Activite */
@@ -559,6 +648,7 @@ hr{
 .activite .row{
     margin-top: 20px;
     margin-left: 40px;
+    font-size: 20px;
 }
 .activite .row p{
     line-height: 2;
