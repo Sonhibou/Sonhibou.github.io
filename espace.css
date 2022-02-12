@@ -26,6 +26,7 @@ background: white;
     #trait::before{
         width: 0px;
         height: 0px;
+        visibility: hidden;
     }
 
   }
@@ -196,9 +197,11 @@ hr{
    
     max-width: 900px; */
 }
+
 .candidature .card-text{
     line-height: 2;
     font-size: 20px;
+    
 }
 .candidature h3{
     margin-left: 30px;
@@ -239,7 +242,10 @@ hr{
     }
     .candidature .card-text{
         margin-left: -40px;
-        flex-wrap: nowrap;
+        margin-right: -20px;
+        flex-wrap: wrap;
+    
+        
     }
     .candidature .card-title{
         font-weight: bold;
@@ -321,6 +327,8 @@ hr{
     .formateur .card-body{
         margin-top: 500px;
         width: 100%;
+        margin-right: -40px;
+        margin-left: 10px;
         list-style: 0.3;
         background-color: #CE0033;
     }
@@ -601,8 +609,9 @@ input, textarea{
 }
 @media screen and (max-width: 600px) {
     .partenaire #carouselExampleControls{
-        margin-left: -100px;
+        margin-left: 50px;
     }
+   
 }
 @media screen and (max-width: 900px) {
     .partenaire #carouselExampleControls{
@@ -618,13 +627,16 @@ input, textarea{
     }
    
     .partenaire .carousel1{
-        width: 100%;
-        height: 100%;
-        margin-left: -180px;
+        width: 150%;
+        
+        margin-left: -290px;
         margin-top: 200px;        
     }
     .partenaire .row p{
         margin-left: 2px;
+    }
+    .partenaire .carousel-control-prev{
+        margin-top: 100px;
     }
     .partenaire .col-gauche{
       /*   margin-left: 30px; */
