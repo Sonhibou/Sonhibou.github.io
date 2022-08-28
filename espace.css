@@ -639,7 +639,7 @@ input, textarea{
     }
    
     .partenaire .carousel1{
-        width: 150%;
+        width: 144%;
         
         margin-left: -290px;
         margin-top: 200px;        
@@ -925,4 +925,9 @@ footer .row .list-unstyled a{
         width: 100%;
     }
   
+  }
+
+  .footer{
+      background: #000000;
+      color: #FFFFFF;
   }
